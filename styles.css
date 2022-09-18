@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --very-dark-blue: hsl(233, 47%, 7%);
+  --dark-blue: hsl(244, 38%, 16%);
+  --soft-violet: hsl(277, 64%, 61%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  font-size: 15px;
+  color: var(--white);
+  font-family: 'Inter';
+  background-color: var(--very-dark-blue);
+}
+
+span {
+  color: var(--soft-violet) !important;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  padding-bottom: 3%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.card {
+  width: 980px;
+  display: flex;
+  justify-content: center;
+  border-radius: 12px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--dark-blue);
+}
+
+.text-section {
+  padding: 7%;
+}
+
+.card-header {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 38px;
+  padding-bottom: 30px;
+}
+
+.card-sub-header {
+  font-weight: 400;
+  font-size: 15px;
+  padding-bottom: 85px;
+}
+
+.stats-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.number {
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.text {
+  font-size: 12px;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.img-section {
+  background-color: var(--soft-violet);
+  width: 100%;
+  border-radius: 0 12px 12px 0;
+}
+
+.team-img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  border-radius: 0 12px 12px 0;
+}
+
+@media screen and (max-width: 768px) {
+
+  .card {
+    display: flex;
+    width: 60%;
+    flex-direction: column-reverse;
+  }
+
+  .card-header {
+    font-size: 34px;
+    text-align: center;
+  }
+
+  .card-sub-header {
+    text-align: center;
+    padding-bottom: 25px;
+  }
+
+  .stats-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .stats {
+    padding: 12px;
+    text-align: center;
+  }
+
+  .number {
+    font-size: 20px;
+  }
+
+  .img-section {
+    height: 260px;
+    border-radius: 12px 12px 0 0;
+  }
+
+  .team-img {
+    border-radius: 12px 12px 0 0;
+    width: 100%;
+    opacity: 0.7;
+  }
+}
